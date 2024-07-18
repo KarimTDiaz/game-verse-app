@@ -1,11 +1,11 @@
 {
   "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
+    "rules": "service/firestore.rules",
+    "indexes": "service/firestore.indexes.json"
   },
   "functions": [
     {
-      "source": "functions",
+      "source": "service/functions",
       "codebase": "default",
       "ignore": [
         "node_modules",
@@ -30,7 +30,7 @@
     ]
   },
   "storage": {
-    "rules": "storage.rules"
+    "rules": "service/storage.rules"
   },
   "emulators": {
     "auth": {
