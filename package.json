@@ -1,7 +1,8 @@
 {
   "scripts": {
     "format": "prettier --write .",
-    "lint": "eslint . --ext .js,.jsx --fix"
+    "lint": "eslint . --ext .js,.jsx --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
