@@ -1,12 +1,28 @@
 {
+  "name": "game-verse-app",
+  "version": "1.0.0",
+  "description": "```bash\r #If you don't have node installed\r choco instal node\r #For firebase development\r choco install javaruntime\r #For firebase tools win\r npm i -g firebase-tools\r #For firebase tools mac\r curl -sL firebase.tools | bash\r ```",
+  "main": "commitlint.config.js",
   "scripts": {
+    "deploy": "firebase deploy --except functions",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx --fix",
     "prepare": "husky install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KarimTDiaz/game-verse-app.git"
+  },
+  "author": "Karim Tilouni Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarimTDiaz/game-verse-app/issues"
+  },
+  "homepage": "https://github.com/KarimTDiaz/game-verse-app#readme",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "firebase-tools": "^13.14.0",
     "husky": "^9.1.1"
   }
 }
