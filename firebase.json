@@ -20,7 +20,7 @@
     }
   ],
   "hosting": {
-    "public": "public",
+    "public": "apps/public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
@@ -54,6 +54,6 @@
     "singleProjectMode": true
   },
   "remoteconfig": {
-    "template": "remoteconfig.template.json"
+    "template": "service/remoteconfig.template.json"
   }
 }
