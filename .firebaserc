@@ -1,5 +1,9 @@
 {
   "projects": {
+    "dev": "game-verse-app-dev",
+    "production": "game-verse-app",
     "default": "game-verse-app-dev"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

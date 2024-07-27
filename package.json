@@ -4,7 +4,8 @@
   "description": "```bash\r #If you don't have node installed\r choco instal node\r #For firebase development\r choco install javaruntime\r #For firebase tools win\r npm i -g firebase-tools\r #For firebase tools mac\r curl -sL firebase.tools | bash\r ```",
   "main": "commitlint.config.js",
   "scripts": {
-    "deploy": "firebase deploy --except functions",
+    "deploy:dev": "firebase use dev && firebase deploy --except functions",
+    "deploy:production": "firebase use production && firebase deploy --except functions",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx --fix",
     "prepare": "husky install"
