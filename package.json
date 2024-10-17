@@ -24,6 +24,7 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "firebase-tools": "^13.14.0",
-    "husky": "^9.1.1"
+    "husky": "^9.1.1",
+    "vite-tsconfig-paths": "^5.0.1"
   }
 }

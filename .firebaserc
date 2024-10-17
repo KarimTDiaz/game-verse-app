@@ -4,6 +4,27 @@
     "production": "game-verse-app",
     "default": "game-verse-app-dev"
   },
-  "targets": {},
+  "targets": {
+    "game-verse-app-dev": {
+      "hosting": {
+        "admin": [
+          "admin-game-verse-app-dev"
+        ],
+        "public": [
+          "public-game-verse-app-dev"
+        ]
+      }
+    },
+    "game-verse-app": {
+      "hosting": {
+        "admin": [
+          "admin-game-verse-prod"
+        ],
+        "public": [
+          "public-game-verse-prod"
+        ]
+      }
+    }
+  },
   "etags": {}
 }
